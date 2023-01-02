@@ -1,0 +1,243 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap");
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+:root {
+  background: hsl(210deg, 60%, 98%);
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: hsl(219deg, 12%, 42%);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 0 1.5em;
+}
+
+#app {
+  max-width: 1440px;
+  margin: auto;
+  background-color: hsl(0deg, 0%, 100%);
+  padding: 1.5em;
+  border-radius: 15px;
+  box-shadow: 0 0 20px -15px hsl(219deg, 14%, 63%);
+}
+
+h1 {
+  font-weight: 800;
+  color: hsl(224deg, 21%, 14%);
+}
+
+strong {
+  font-weight: 800;
+  color: hsl(224deg, 21%, 14%);
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.notifications__container {
+  display: flex;
+}
+
+.button__read button {
+  color: hsl(219deg, 12%, 42%);
+  background: none;
+  border: none;
+}
+
+.comments__container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.5em;
+}
+
+.profil__container {
+  display: flex;
+  align-items: flex-start;
+  padding: 1em;
+  background: hsl(210deg, 60%, 98%);
+  border-radius: 10px;
+}
+.profil__container p {
+  line-height: 1.3em;
+}
+
+.profil__img {
+  width: 3em;
+  margin-right: 1em;
+}
+.profil__img img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1/1;
+}
+
+.profil__box {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.8em;
+  align-items: flex-start;
+}
+
+.profil__description {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.3em;
+  margin-top: 0.05em;
+}
+
+.profil__text p strong {
+  margin-right: 0.5em;
+}
+.profil__text p a {
+  color: hsl(219deg, 12%, 42%);
+  font-weight: 800;
+  margin-left: 0.5em;
+}
+
+.profil__comment {
+  border-radius: 10px;
+  padding: 1em;
+  border: 1px solid hsl(211deg, 68%, 94%);
+}
+
+/*# sourceMappingURL=style.css.map */

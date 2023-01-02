@@ -1,0 +1,23 @@
+// Layout
+$mobile: 375px;
+$desktop: 1440px;
+
+// Colors 
+// Primary 
+$color__red: hsl(1, 90%, 64%);
+$color__blue: hsl(219, 85%, 26%);
+// Neutral 
+$color_neutral__white: hsl(0, 0%, 100%);
+$color_very_light_grayish_blue: hsl(210, 60%, 98%);
+$color_light_grayish_blue_1: hsl(211, 68%, 94%);
+$color_light_grayish_blue_2: hsl(205, 33%, 90%);
+$color_grayish_blue: hsl(219, 14%, 63%);
+$color_dark_grayish_blue: hsl(219, 12%, 42%);
+$color_very_dark_blue: hsl(224, 21%, 14%);
+
+// Typography 
+// Body Copy 
+$font_size_paragraph: 16px;
+$font_family: 'Plus Jakarta Sans', sans-serif;
+$font_weight_light: 500;
+$font_weight_strong: 800;
