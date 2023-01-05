@@ -161,6 +161,7 @@ body {
 h1 {
   font-weight: 800;
   color: hsl(224deg, 21%, 14%);
+  font-size: 1.4em;
 }
 
 strong {
@@ -171,19 +172,34 @@ strong {
 .header__container {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 2em;
 }
 
 .notifications__container {
   display: flex;
 }
 
+.notif__number {
+  background: hsl(219deg, 85%, 26%);
+  color: hsl(0deg, 0%, 100%);
+  font-size: 0.95em;
+  padding: 0.2em 0.5em;
+  border-radius: 5px;
+  margin-left: 0.7em;
+}
+
 .button__read button {
   color: hsl(219deg, 12%, 42%);
   background: none;
   border: none;
+  transition: color 0.25s;
+}
+.button__read button:hover {
+  color: hsl(219deg, 85%, 26%);
+  cursor: pointer;
 }
 
-.comments__container {
+.main__container {
   display: flex;
   flex-direction: column;
   row-gap: 0.5em;
@@ -193,7 +209,7 @@ strong {
   display: flex;
   align-items: flex-start;
   padding: 1em;
-  background: hsl(210deg, 60%, 98%);
+  background: hsl(0deg, 0%, 100%);
   border-radius: 10px;
 }
 .profil__container p {
@@ -220,24 +236,83 @@ strong {
 
 .profil__description {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
   row-gap: 0.3em;
   margin-top: 0.05em;
 }
 
+.description__box {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.3em;
+}
+
+.profil__pic {
+  width: 3em;
+  margin-left: 1em;
+  border-radius: 8px;
+  transition: box-shadow 0.25s;
+}
+.profil__pic:hover {
+  box-shadow: 0 0 0 3px hsl(211deg, 68%, 94%);
+  cursor: pointer;
+  border-radius: 8px;
+}
+.profil__pic img {
+  width: 3em;
+}
+
+.profil__text p {
+  position: relative;
+}
 .profil__text p strong {
   margin-right: 0.5em;
+  transition: color 0.25s;
+}
+.profil__text p strong:hover {
+  color: hsl(219deg, 85%, 26%);
+  cursor: pointer;
 }
 .profil__text p a {
   color: hsl(219deg, 12%, 42%);
   font-weight: 800;
   margin-left: 0.5em;
+  transition: color 0.25s;
+}
+.profil__text p a:hover {
+  color: hsl(219deg, 85%, 26%);
+  cursor: pointer;
+}
+.profil__text p::after {
+  visibility: hidden;
+  position: absolute;
+  content: "";
+  top: 8px;
+  right: -13px;
+  background: red;
+  width: 7px;
+  height: 7px;
+  border-radius: 7px;
+}
+
+.link__important {
+  color: hsl(219deg, 85%, 26%) !important;
+}
+
+.link__hidden {
+  display: none;
 }
 
 .profil__comment {
   border-radius: 10px;
   padding: 1em;
   border: 1px solid hsl(211deg, 68%, 94%);
+  transition: background 0.25s;
+}
+.profil__comment:hover {
+  background: hsl(205deg, 33%, 90%);
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -35,75 +35,27 @@
           <div class="header__container">
             <div class="notifications__container">
               <h1>Notifications</h1>
-              <span>3</span>
-              <Notif name="okok"></Notif>
+              <span class="notif__number">{{ numberLike }}</span>
             </div>
             <div class="button__read">
               <button>Mark all as read</button>
             </div>
           </div>
           <div class="main__container">
-            <div class="comments__container">
+            <div
+              v-for="(item, index) in items"
+              :key="item.id"
+              class="comments__container"
+            >
               <Profil
-                src="./assets/images/avatar-mark-webber.webp"
-                name="Mark Webber"
-                text="reacted to your recent post"
-                link="My first tournament
-                today!"
-                time="1m ago"
-                text_comment=""
-              ></Profil>
-              <Profil
-                src="./assets/images/avatar-angela-gray.webp"
-                name="Angela Gray"
-                text="followed you"
-                link=""
-                time="5m ago"
-                text_comment=""
-              ></Profil>
-              <Profil
-                src="./assets/images/avatar-jacob-thompson.webp"
-                name="Jacob Thompson"
-                text="has joined your group"
-                link="Chess Club"
-                time="1 day ago"
-                text_comment=""
-              ></Profil>
-              <Profil
-                src="./assets/images/avatar-rizky-hasanuddin.webp"
-                name="Rizky Hasanuddin"
-                text="sent you a private message"
-                link=""
-                time="5 days ago"
-                text_comment="Hello,
-                thanks for setting up the Chess Club. I've been a member for a
-                few weeks now and I'm already having lots of fun and improving
-                my game."
-              ></Profil>
-              <Profil
-                src="./assets/images/avatar-kimberly-smith.webp"
-                name="Kimberly Smith"
-                text="commented on your picture"
-                link=""
-                time="1 week ago"
-                text_comment=""
-              ></Profil>
-              <Profil
-                src="./assets/images/avatar-nathan-peterson.webp"
-                name="Nathan Peterson"
-                text="reacted to your recent post"
-                link="5 end-game
-                strategies to increase your win rate"
-                time="2 weeks ago"
-                text_comment=""
-              ></Profil>
-              <Profil
-                src="./assets/images/avatar-anna-kim.webp"
-                name="Anna Kim"
-                text="left the group"
-                link="Chess Club"
-                time="2 weeks ago"
-                text_comment=""
+                :src__img="item.src__img"
+                :name="item.name"
+                :text="item.text"
+                :link="item.link"
+                :time="item.time"
+                :src__pic="item.src__pic"
+                :text__comment="item.text__comment"
+                @valid__like="addLike(item, index)"
               ></Profil>
             </div>
           </div>
