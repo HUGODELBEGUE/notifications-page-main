@@ -3,11 +3,14 @@
 @import './variables';
 
 :root {
+    // Colors
     background: $color_very_light_grayish_blue;
+    color: $color_dark_grayish_blue;
+
+    // Fonts
     font-family: $font_family;
     font-size: $font_size_paragraph;
     font-weight: $font_weight_light;
-    color: $color_dark_grayish_blue;
 }
 
 * {
@@ -18,7 +21,12 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    align-items: center;
     padding: 0 1.5em;
+
+    @media only screen and (max-width: 435px) {
+        padding: 0;
+    }
 }
 
 #app {
@@ -28,12 +36,25 @@ body {
     padding: 1.5em;
     border-radius: 15px;
     box-shadow: 0 0 20px -15px $color_grayish_blue;
+
+    @media only screen and (max-width: 435px) {
+        width: 100%;
+        min-width: $mobile;
+    }
 }
 
 h1 {
     font-weight: $font_weight_strong;
     color: $color_very_dark_blue;
     font-size: 1.4em;
+}
+
+button {
+    color: $color_dark_grayish_blue;
+    font-size: $font_size_paragraph;
+    font-family: $font_family;
+    background: none;
+    border: none;
 }
 
 strong {
@@ -62,9 +83,6 @@ strong {
 
 .button__read {
     button {
-        color: $color_dark_grayish_blue;
-        background: none;
-        border: none;
         transition: color .25s;
 
         &:hover {
@@ -85,12 +103,21 @@ strong {
     align-items: flex-start;
     padding: 1em;
     background: $color_neutral__white;
-    //background: $color_very_light_grayish_blue;
     border-radius: 10px;
+    transition: box-shadow .1s, background .1s;
+
+    &:hover {
+        background: $color_very_light_grayish_blue;
+        box-shadow: 0 0 4px 1px $color_light_grayish_blue_1;
+    }
 
     p {
         line-height: 1.3em;
     }
+}
+
+.background {
+    background: $color_very_light_grayish_blue;
 }
 
 .profil__img {
@@ -110,7 +137,6 @@ strong {
     flex-direction: column;
     row-gap: .8em;
     align-items: flex-start;
-
 }
 
 .profil__description {
@@ -158,10 +184,6 @@ strong {
             }
         }
 
-        span {
-            //margin-right: .5em;
-        }
-
         a {
             color: $color_dark_grayish_blue;
             font-weight: $font_weight_strong;
@@ -173,19 +195,16 @@ strong {
                 cursor: pointer;
             }
         }
-
-        &::after {
-            visibility: hidden;
-            position: absolute;
-            content: '';
-            top: 8px;
-            right: -13px;
-            background: red;
-            width: 7px;
-            height: 7px;
-            border-radius: 7px;
-        }
     }
+}
+
+.red__dot {
+    display: inline-flex;
+    vertical-align: middle;
+    margin-left: .5em;
+    background: $color__red;
+    border: 4.5px solid $color__red;
+    border-radius: 4.5px;
 }
 
 .link__important {

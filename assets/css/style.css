@@ -132,10 +132,10 @@ table {
 
 :root {
   background: hsl(210deg, 60%, 98%);
+  color: hsl(219deg, 12%, 42%);
   font-family: "Plus Jakarta Sans", sans-serif;
   font-size: 16px;
   font-weight: 500;
-  color: hsl(219deg, 12%, 42%);
 }
 
 * {
@@ -146,7 +146,13 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  align-items: center;
   padding: 0 1.5em;
+}
+@media only screen and (max-width: 435px) {
+  body {
+    padding: 0;
+  }
 }
 
 #app {
@@ -157,11 +163,25 @@ body {
   border-radius: 15px;
   box-shadow: 0 0 20px -15px hsl(219deg, 14%, 63%);
 }
+@media only screen and (max-width: 435px) {
+  #app {
+    width: 100%;
+    min-width: 375px;
+  }
+}
 
 h1 {
   font-weight: 800;
   color: hsl(224deg, 21%, 14%);
   font-size: 1.4em;
+}
+
+button {
+  color: hsl(219deg, 12%, 42%);
+  font-size: 16px;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  background: none;
+  border: none;
 }
 
 strong {
@@ -189,9 +209,6 @@ strong {
 }
 
 .button__read button {
-  color: hsl(219deg, 12%, 42%);
-  background: none;
-  border: none;
   transition: color 0.25s;
 }
 .button__read button:hover {
@@ -211,9 +228,18 @@ strong {
   padding: 1em;
   background: hsl(0deg, 0%, 100%);
   border-radius: 10px;
+  transition: box-shadow 0.1s, background 0.1s;
+}
+.profil__container:hover {
+  background: hsl(210deg, 60%, 98%);
+  box-shadow: 0 0 4px 1px hsl(211deg, 68%, 94%);
 }
 .profil__container p {
   line-height: 1.3em;
+}
+
+.background {
+  background: hsl(210deg, 60%, 98%);
 }
 
 .profil__img {
@@ -284,16 +310,14 @@ strong {
   color: hsl(219deg, 85%, 26%);
   cursor: pointer;
 }
-.profil__text p::after {
-  visibility: hidden;
-  position: absolute;
-  content: "";
-  top: 8px;
-  right: -13px;
-  background: red;
-  width: 7px;
-  height: 7px;
-  border-radius: 7px;
+
+.red__dot {
+  display: inline-flex;
+  vertical-align: middle;
+  margin-left: 0.5em;
+  background: hsl(1deg, 90%, 64%);
+  border: 4.5px solid hsl(1deg, 90%, 64%);
+  border-radius: 4.5px;
 }
 
 .link__important {

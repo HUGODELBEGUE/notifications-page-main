@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
     <link rel="stylesheet" href="./assets/css/style.css" />
     <link
       rel="icon"
@@ -17,6 +16,8 @@
       .attribution {
         font-size: 11px;
         text-align: center;
+        margin: auto;
+        margin-top: -15vh;
       }
       .attribution a {
         color: hsl(228, 45%, 44%);
@@ -38,7 +39,7 @@
               <span class="notif__number">{{ numberLike }}</span>
             </div>
             <div class="button__read">
-              <button>Mark all as read</button>
+              <button @click="addAllLikes">Mark all as read</button>
             </div>
           </div>
           <div class="main__container">
@@ -48,6 +49,7 @@
               class="comments__container"
             >
               <Profil
+                :id="item.id"
                 :src__img="item.src__img"
                 :name="item.name"
                 :text="item.text"
@@ -55,7 +57,8 @@
                 :time="item.time"
                 :src__pic="item.src__pic"
                 :text__comment="item.text__comment"
-                @valid__like="addLike(item, index)"
+                :likes="likes"
+                @add__like="addLike(item)"
               ></Profil>
             </div>
           </div>
