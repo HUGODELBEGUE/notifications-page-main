@@ -167,6 +167,7 @@ body {
   #app {
     width: 100%;
     min-width: 375px;
+    margin: 0;
   }
 }
 
