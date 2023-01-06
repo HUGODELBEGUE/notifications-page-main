@@ -110,8 +110,9 @@ strong {
     transition: box-shadow .1s, background .1s;
 
     &:hover {
-        background: $color_very_light_grayish_blue;
-        box-shadow: 0 0 4px 1px $color_light_grayish_blue_1;
+        // background: $color_very_light_grayish_blue;
+        // box-shadow: 0 0 4px 1px $color_light_grayish_blue_1;
+        cursor: default;
     }
 
     p {

@@ -234,8 +234,7 @@ strong {
   transition: box-shadow 0.1s, background 0.1s;
 }
 .profil__container:hover {
-  background: hsl(210deg, 60%, 98%);
-  box-shadow: 0 0 4px 1px hsl(211deg, 68%, 94%);
+  cursor: default;
 }
 .profil__container p {
   line-height: 1.3em;
