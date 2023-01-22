@@ -34,7 +34,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [https://github.com/HUGODELBEGUE/notifications-page-main](https://github.com/HUGODELBEGUE/notifications-page-main)
+- Solution URL: [https://github.com/hugodelbegue/notifications-page-main](https://github.com/HUGODELBEGUE/notifications-page-main)
 - Live Site URL: [https://hugodelbegue.github.io/notifications-page-main/](https://hugodelbegue.github.io/notifications-page-main/)
 
 ## My process
