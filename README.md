@@ -93,7 +93,7 @@ In my future projects, I will focus on the Vue framework and continue to train i
 
 ## Author
 
-- Website - [primalprod.fr](https://primalprod.fr/)
+- Portfolio - [hugodelbegue.fr](https://hugodelbegue.fr/)
 - Frontend Mentor - [@hugodelbegue](https://www.frontendmentor.io/profile/HUGODELBEGUE)
 - GitHub - [HUGODELBEGUE](https://github.com/HUGODELBEGUE)
 
